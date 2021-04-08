@@ -28,12 +28,12 @@ document.querySelector("#pause").addEventListener("click", function(){
 });
 
 document.querySelector("#slower").addEventListener("click", function(){
-	video.playbackRate * 0.95;
+	video.playbackRate = video.playbackRate * 0.95;
 	console.log("Slow speed down to" + video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function(){
-	video.playbackRate * 1.05;
+	video.playbackRate = video.playbackRate * 1.05;
 	console.log("Increase speed by " + video.playbackRate);
 });
 
